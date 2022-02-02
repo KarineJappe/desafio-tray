@@ -49,3 +49,16 @@ Então("a API irá retornar o id do episódio {int}") do |episode_id|
   expect($response["episode_id"]).to be_a_kind_of(Integer)
   expect($response["episode_id"]).to eql(episode_id)
 end
+
+Então("a API irá retornar uma data de lançamento no padrão americano") do
+  def valid_date(date, format)
+    Date.parse(date).strftime(format) == date
+  end
+
+  #valida a data no padrão americano
+  expect(valid_date($response["release_date"], "%Y-%m-%d")).to be_truthy
+
+  # As duas linhas abaixo realizam a validação que a data não é padrão brasileiro.
+  # expect(valid_date($response["release_date"], "%d-%m-%Y")).to be_falsy
+  expect($response["release_date"]).not_to match(/(\d{2})[-.\/](\d{2})[-.\/](\d{4})/)
+end

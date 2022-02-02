@@ -39,3 +39,9 @@ Funcionalidade: Filmes
     Dado o endereço da API para manter a visualização de Filmes
     Quando realizar uma requisição passando o filme 6
     Então a API irá retornar o id do episódio 3
+
+  #Validar o formato de data válida (padrão americano YYYY-MM-DD) e validar se a data não é padrão Brasil;
+  Cenário: Data válida
+    Dado o endereço da API para manter a visualização de Filmes
+    Quando realizar uma requisição passando o filme 6
+    Então a API irá retornar uma data de lançamento no padrão americano
