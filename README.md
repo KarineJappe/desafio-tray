@@ -1,6 +1,6 @@
 # SWAPI
 
-- [ ] 1. Validar o formato do request (json válido) para a seguinte API:  <https://swapi.dev/api/films/?format=json>
+- [x] 1. Validar o formato do request (json válido) para a seguinte API:  <https://swapi.dev/api/films/?format=json>
 
 - [ ] 2. Validar se o retorno HTTP é válido para um GET;
 
