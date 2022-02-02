@@ -8,7 +8,7 @@
 
 - [x] 4. Validar se o filme 10 é válido e qual o tipo de retorno ao consultar;
 
-- [ ] 5. Validar o nome correto de um determinado episódio de filme;
+- [x] 5. Validar o nome correto de um determinado episódio de filme;
 
 - [ ] 6. Validar o ID do episódio e o tipo do dado está correto;
 

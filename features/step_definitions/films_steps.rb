@@ -38,3 +38,8 @@ Então("a API irá retornar uma mensagem de erro junto com o código de status {
   expect($response.code).to eql(int)
   expect($response["detail"]).to eql("Not found")
 end
+
+Então("a API irá retornar os dados do filme {string}") do |episode_title|
+  #valida o título do epsódio
+  expect($response["title"]).to eql(episode_title)
+end

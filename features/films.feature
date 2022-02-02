@@ -27,3 +27,9 @@ Funcionalidade: Filmes
     Dado o endereço da API para manter a visualização de Filmes
     Quando realizar uma requisição passando o filme 10
     Então a API irá retornar uma mensagem de erro junto com o código de status 404
+
+  #Validar o nome correto de um determinado episódio de filme;
+  Cenário: Nome correto
+    Dado o endereço da API para manter a visualização de Filmes
+    Quando realizar uma requisição passando o filme 6
+    Então a API irá retornar os dados do filme "Revenge of the Sith"
