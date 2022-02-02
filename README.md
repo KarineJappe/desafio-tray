@@ -6,7 +6,7 @@
 
 - [x] 3. Validar retornos para URLs inválidas, como por exemplo: <https://swapi.dev/api/people/?format=jsonx>
 
-- [ ] 4. Validar se o filme 10 é válido e qual o tipo de retorno ao consultar;
+- [x] 4. Validar se o filme 10 é válido e qual o tipo de retorno ao consultar;
 
 - [ ] 5. Validar o nome correto de um determinado episódio de filme;
 
