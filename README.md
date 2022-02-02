@@ -2,7 +2,7 @@
 
 - [x] 1. Validar o formato do request (json válido) para a seguinte API:  <https://swapi.dev/api/films/?format=json>
 
-- [ ] 2. Validar se o retorno HTTP é válido para um GET;
+- [x] 2. Validar se o retorno HTTP é válido para um GET;
 
 - [x] 3. Validar retornos para URLs inválidas, como por exemplo: <https://swapi.dev/api/people/?format=jsonx>
 
