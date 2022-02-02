@@ -14,4 +14,4 @@
 
 - [x] 7. Validar o formato de data válida (padrão americano YYYY-MM-DD) e validar se a data não é padrão Brasil;
 
-- [ ] 8. Validar o peso e altura do “people” C-3PO e validar pelo menos um filme que  ele tenha participado.
+- [x] 8. Validar o peso e altura do “people” C-3PO e validar pelo menos um filme que  ele tenha participado.
