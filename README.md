@@ -10,7 +10,7 @@
 
 - [x] 5. Validar o nome correto de um determinado episódio de filme;
 
-- [ ] 6. Validar o ID do episódio e o tipo do dado está correto;
+- [x] 6. Validar o ID do episódio e o tipo do dado está correto;
 
 - [ ] 7. Validar o formato de data válida (padrão americano YYYY-MM-DD) e validar se a data não é padrão Brasil;
 

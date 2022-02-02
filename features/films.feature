@@ -33,3 +33,9 @@ Funcionalidade: Filmes
     Dado o endereço da API para manter a visualização de Filmes
     Quando realizar uma requisição passando o filme 6
     Então a API irá retornar os dados do filme "Revenge of the Sith"
+
+  #Validar o ID do episódio e o tipo do dado está correto;
+  Cenário: Espsódio válido
+    Dado o endereço da API para manter a visualização de Filmes
+    Quando realizar uma requisição passando o filme 6
+    Então a API irá retornar o id do episódio 3

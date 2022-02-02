@@ -43,3 +43,9 @@ Então("a API irá retornar os dados do filme {string}") do |episode_title|
   #valida o título do epsódio
   expect($response["title"]).to eql(episode_title)
 end
+
+Então("a API irá retornar o id do episódio {int}") do |episode_id|
+  #valida id do epsodio e o tipo int
+  expect($response["episode_id"]).to be_a_kind_of(Integer)
+  expect($response["episode_id"]).to eql(episode_id)
+end
