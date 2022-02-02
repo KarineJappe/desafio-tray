@@ -7,6 +7,7 @@ Quando("realizar uma requisição passando o formato de visualizção válido") 
 end
 
 Então("a API irá retornar os filmes no formato Json") do
+  #valida que o formato retornado é JSON
   expect($response.code).to eql(200)
   expect {
     JSON.parse($response.body)
@@ -17,7 +18,8 @@ Quando("realizar uma requisição passando o formato de visualizção inválido"
   $response = HTTParty.get("#{$uri_base}?format=jsonx")
 end
 
-Então("a API irá retornar uma mensgem de erro com o código {int}") do |status_code|
+Então("a API irá retornar uma mensagem de erro com o código de status {int}") do |status_code|
+  #valida status code e mensagem de retorno
   expect($response.code).to eql(status_code)
   expect($response["detail"]).to eql("Not found")
 end
@@ -26,11 +28,13 @@ Quando("realizar uma requisição passando o filme {int}") do |int|
   $response = HTTParty.get("#{$uri_base}#{int}")
 end
 
-Então("a API irá retornar as informações de um filme") do
-  expect($response.code).to eql(200)
+Então("a API irá retornar as informações de um filme junto com o código de status {int}") do |status_code|
+  #valida o status code
+  expect($response.code).to eql(status_code)
 end
 
-Então("a API irá retornar uma mensgem de erro junto com o código {int}") do |int|
+Então("a API irá retornar uma mensagem de erro junto com o código de status {int}") do |int|
+  #valida status code e mensagem de retorno
   expect($response.code).to eql(int)
   expect($response["detail"]).to eql("Not found")
 end
