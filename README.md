@@ -1,5 +1,39 @@
 # SWAPI
 
+ Projeto desenvolvido em `ruby` utilizando `cucumber`, `HTTParty` e `rspec`. Realiza testes de API utilizando a api públlica [SWAPI](https://swapi.dev/documentation).
+
+  >Para rodar esta projeto é necessário seguir os passos abaixo, partindo do pressuposto que tenha o ruby instalado em sua máquina na versão [2.7.5](https://ruby-doc.org/stdlib-2.7.5/).
+
+## Bundler
+
+Instale o Bundler:
+
+```bash
+$ gem install bundler
+```
+
+## Projeto
+
+>Faça o Clone do projeto
+>Execute o comando  para instalar as dependências
+
+```bash
+$ bundle install
+```
+
+>Rode o projeto usando o comando
+
+```bash
+$ cucumber
+```
+
+### Abaixo está as validações realizadas, dividias em dois arquivos de Features.
+
+```bash
+features/films.feature
+features/people.feature
+```
+
 - [x] 1. Validar o formato do request (json válido) para a seguinte API:  <https://swapi.dev/api/films/?format=json>
 
 - [x] 2. Validar se o retorno HTTP é válido para um GET;
